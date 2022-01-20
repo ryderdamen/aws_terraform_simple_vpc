@@ -13,7 +13,7 @@ provider "aws" {
 
 
 module "simple-vpc" {
-  source               = "./simple-vpc"
+  source               = "github.com/ryderdamen/aws_terraform_simple_vpc"
   environment          = "staging"
   vpc_cidr_block       = "10.0.0.0/16"
   public_subnet_count  = 3

@@ -1,5 +1,5 @@
-*.terraform
-*.tfstate
+**/*.terraform
+**/*.tfstate
 **/.DS_Store
-*.tfstate*
-*.hcl
+**/*.tfstate*
+**/*.hcl

@@ -6,6 +6,19 @@ A terraform module for implementing a very simple AWS VPC, with subnets, routes,
 ## Why?
 I'm doing a blogging series on some AWS services, and I need a base VPC to reference in my other blogs so the blog can focus on the fun part - this is that VPC.
 
+## Example Use
+Here's an example of using this module within an existing project.
+```terraform
+module "simple-vpc" {
+  source               = "github.com/ryderdamen/aws_terraform_simple_vpc"
+  environment          = "staging"
+  vpc_cidr_block       = "10.0.0.0/16"
+  public_subnet_count  = 3
+  private_subnet_count = 3
+}
+
+```
+
 ## Getting Started
 To run the example implementation, first make sure you have the AWS command line tool installed on your local machine, and you're able to run example commands.
 

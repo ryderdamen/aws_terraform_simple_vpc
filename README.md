@@ -19,9 +19,9 @@ You'll also need to make sure terraform is installed on your local machine.
 terraform --version
 ```
 
-Once you're ready, clone this repository, descend into it, and run the init command:
+Once you're ready, clone this repository, descend into the test directory, and run the init command:
 ```bash
-cd aws_terraform_simple_vpc
+cd aws_terraform_simple_vpc/test
 terraform init
 ```
 

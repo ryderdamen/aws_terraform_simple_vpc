@@ -1,3 +1,3 @@
 .PHONY: install
 install:
-	@terraform init
+	@cd test && terraform init

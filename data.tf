@@ -1,5 +1,6 @@
 data "aws_availability_zones" "available" {
     state = "available"
+    exclude_names = local.excluded_availability_zones
 }
 
 resource "random_shuffle" "public_availability_zones" {
